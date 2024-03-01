@@ -1,13 +1,7 @@
-﻿using AnimalMotel.Classes.Animals;
-using AnimalMotel.Classes.Animals.Mammals;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AnimalMotel.Classes
+﻿namespace AnimalMotel.Classes
 {
+    // Bas klass för alla djur, alla djur typ klasser ärver från denna, och alla individuella djur klasser ärver från deras typ klass.
+    // ex. Animal -> Mammal -> Dog
     abstract class Animal
     {
         Main main;
@@ -37,7 +31,7 @@ namespace AnimalMotel.Classes
 
         public virtual void SetSpecification2()
         {
-            Specification2 = main.txtSpec2.Enabled ? main.txtSpec2.Text : main.cbSpec2.SelectedItem;
+            Specification2 = main.cbSpec2.SelectedItem;
         }
 
         public override string ToString()
@@ -57,15 +51,41 @@ namespace AnimalMotel.Classes
     {
         Mammal,
         Bird,
-        Amphibian,
         Reptile,
+        Amphibian,
         Fish,
         Invertebrate
     }
 
     public enum AllAnimals
     {
+        // Mammals
         Dog,
         Cat,
+        // Birds
+        Raven,
+        Flamingo,
+        // Reptiles
+        Crocodile,
+        BeardedDragon,
+        Turtle,
+        // Amphibians
+        Frog,
+        Salamander,
+        Axolotl,
+        // Fish
+        Clownfish,
+        PufferFish,
+        Shark,
+        Whale,
+        Salmon,
+        // Invertebrates
+        Insect,
+        Arachnid,
+        Snail,
+        Crustacean,
+        Clam,
+        Coral,
+        JellyFish
     }
 }

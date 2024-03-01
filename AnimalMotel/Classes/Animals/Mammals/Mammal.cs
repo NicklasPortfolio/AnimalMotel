@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace AnimalMotel.Classes
+﻿namespace AnimalMotel.Classes
 {
     abstract class Mammal : Animal
     {

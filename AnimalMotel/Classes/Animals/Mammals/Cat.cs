@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using static AnimalMotel.Classes.Animals.Dog;
 
 namespace AnimalMotel.Classes.Animals.Mammals
 {

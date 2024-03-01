@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AnimalMotel.Classes.Animals.Birds
+﻿namespace AnimalMotel.Classes.Animals.Birds
 {
     abstract class Bird : Animal
     {
@@ -19,10 +13,22 @@ namespace AnimalMotel.Classes.Animals.Birds
             Specification1 = $"Primary color: {Specification1}";
         }
 
+        public override void SetSpecification2()
+        {
+            base.SetSpecification2();
+            Specification2 = $"Can speak: {Specification2}";
+        }
+
         public enum BirdTypes
         {
             Raven,
             Flamingo
+        }
+
+        public enum CanSpeak
+        {
+            Yes,
+            No
         }
     }
 }

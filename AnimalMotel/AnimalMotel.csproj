@@ -53,12 +53,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\AnimalManager.cs" />
+    <Compile Include="Classes\Animals\Amphibians\Amphibian.cs" />
+    <Compile Include="Classes\Animals\Amphibians\Salamander.cs" />
+    <Compile Include="Classes\Animals\Amphibians\Axolotl.cs" />
+    <Compile Include="Classes\Animals\Amphibians\Frog.cs" />
     <Compile Include="Classes\Animals\Animal.cs" />
     <Compile Include="Classes\Animals\Birds\Bird.cs" />
+    <Compile Include="Classes\Animals\Birds\Flamingo.cs" />
     <Compile Include="Classes\Animals\Birds\Raven.cs" />
+    <Compile Include="Classes\Animals\Fish\Salmon.cs" />
+    <Compile Include="Classes\Animals\Fish\Whale.cs" />
+    <Compile Include="Classes\Animals\Fish\PufferFish.cs" />
+    <Compile Include="Classes\Animals\Fish\Shark.cs" />
+    <Compile Include="Classes\Animals\Fish\Clownfish.cs" />
+    <Compile Include="Classes\Animals\Fish\Fish.cs" />
+    <Compile Include="Classes\Animals\Invertebrates\Crustacean.cs" />
+    <Compile Include="Classes\Animals\Invertebrates\Arachnid.cs" />
+    <Compile Include="Classes\Animals\Invertebrates\Coral.cs" />
+    <Compile Include="Classes\Animals\Invertebrates\JellyFish.cs" />
+    <Compile Include="Classes\Animals\Invertebrates\Snail.cs" />
+    <Compile Include="Classes\Animals\Invertebrates\Clam.cs" />
+    <Compile Include="Classes\Animals\Invertebrates\Insect.cs" />
+    <Compile Include="Classes\Animals\Invertebrates\Invertebrate.cs" />
     <Compile Include="Classes\Animals\Mammals\Cat.cs" />
     <Compile Include="Classes\Animals\Mammals\Dog.cs" />
     <Compile Include="Classes\Animals\Mammals\Mammal.cs" />
+    <Compile Include="Classes\Animals\Reptiles\BeardedDragon.cs" />
+    <Compile Include="Classes\Animals\Reptiles\Crocodile.cs" />
+    <Compile Include="Classes\Animals\Reptiles\Reptile.cs" />
+    <Compile Include="Classes\Animals\Reptiles\Turtle.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +103,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ProjectClassDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -131,6 +155,99 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\borzoi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\americanshorthair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\americanbobtail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scottishfold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chartreux.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainecoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balinese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\javanese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\munchkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siamese.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bombay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flamingo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beardeddragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crocodile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\axolotl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salamander.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clownfish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pufferfish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salmon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arachnid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crustacean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jellyfish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coral.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
