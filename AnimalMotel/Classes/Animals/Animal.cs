@@ -42,7 +42,7 @@ namespace AnimalMotel.Classes
 
         public override string ToString()
         {
-            return $"{Id} | {Name} | {Age} | {Gender} | {AnimalName} | {AnimalType} | {Specification1} | {Specification2}";
+            return $"{Id} | {Name} | {Age} | {Gender} | {AnimalName} | {AnimalType} | {Specification1?.ToString() ?? "N/A"} | {Specification2?.ToString() ?? "N/A"}";
         }
     }
 

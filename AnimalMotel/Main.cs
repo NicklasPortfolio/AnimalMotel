@@ -1,6 +1,8 @@
 ﻿using AnimalMotel.Classes;
 using AnimalMotel.Classes.Animals;
+using AnimalMotel.Classes.Animals.Birds;
 using AnimalMotel.Classes.Animals.Mammals;
+using AnimalMotel.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,7 +50,7 @@ namespace AnimalMotel
                     lbAnimal.DataSource = Enum.GetValues(typeof(Mammal.MammalTypes));
                     break;
                 case AnimalTypes.Bird:
-                    // lbAnimal.DataSource = Enum.GetValues(typeof(Bird.BirdTypes));
+                    lbAnimal.DataSource = Enum.GetValues(typeof(Bird.BirdTypes));
                     break;
                 case AnimalTypes.Amphibian:
                     // lbAnimal.DataSource = Enum.GetValues(typeof(Amphibian.AmphibianTypes));
@@ -92,6 +94,15 @@ namespace AnimalMotel
             Enum selectedEnum = (Enum)Enum.Parse(typeof(AllAnimals), lbAnimal.SelectedItem.ToString());
 
             manager.CreateNewAnimal(selectedEnum);
+        }
+
+        private void btnLoadImg_Click(object sender, EventArgs e)
+        {
+            string selected;
+            selected = cbSpec2.Enabled ? cbSpec2.SelectedItem.ToString() : lbAnimal.SelectedItem.ToString();
+            selected = selected.Replace(" ", "").ToLower();
+            Console.WriteLine(selected);
+            picAnimal.Image = (Image)Resources.ResourceManager.GetObject(selected);
         }
     }
 }

@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AnimalMotel.Properties
-{
-
-
+namespace AnimalMotel.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -19,52 +19,174 @@ namespace AnimalMotel.Properties
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AnimalMotel.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap beagle {
+            get {
+                object obj = ResourceManager.GetObject("beagle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bordercollie {
+            get {
+                object obj = ResourceManager.GetObject("bordercollie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap borzoi {
+            get {
+                object obj = ResourceManager.GetObject("borzoi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chihuahua {
+            get {
+                object obj = ResourceManager.GetObject("chihuahua", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap germanshepherd {
+            get {
+                object obj = ResourceManager.GetObject("germanshepherd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goldenretriever {
+            get {
+                object obj = ResourceManager.GetObject("goldenretriever", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jackrussellterrier {
+            get {
+                object obj = ResourceManager.GetObject("jackrussellterrier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap labrador {
+            get {
+                object obj = ResourceManager.GetObject("labrador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pomeranian {
+            get {
+                object obj = ResourceManager.GetObject("pomeranian", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rottweiler {
+            get {
+                object obj = ResourceManager.GetObject("rottweiler", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap samoyed {
+            get {
+                object obj = ResourceManager.GetObject("samoyed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shibainu {
+            get {
+                object obj = ResourceManager.GetObject("shibainu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap siberianhusky {
+            get {
+                object obj = ResourceManager.GetObject("siberianhusky", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

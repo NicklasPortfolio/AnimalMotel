@@ -47,9 +47,9 @@ namespace AnimalMotel.Classes
             string newGender = gender.ToString();
             string newType = type.ToString();
 
-            newGender = newGender.Take(1).ToString().ToUpper();
-            newType = newType.Take(1).ToString().ToUpper();
-            animal = animal.Take(1).ToString().ToUpper();
+            newGender = newGender.First().ToString().ToUpper();
+            newType = newType.First().ToString().ToUpper();
+            animal = animal.First().ToString().ToUpper();
 
             string newAge = age < 10 ? $"0{age}" : age.ToString();
 

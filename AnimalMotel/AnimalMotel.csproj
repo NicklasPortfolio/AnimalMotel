@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="Classes\AnimalManager.cs" />
     <Compile Include="Classes\Animals\Animal.cs" />
+    <Compile Include="Classes\Animals\Birds\Bird.cs" />
+    <Compile Include="Classes\Animals\Birds\Raven.cs" />
     <Compile Include="Classes\Animals\Mammals\Cat.cs" />
     <Compile Include="Classes\Animals\Mammals\Dog.cs" />
     <Compile Include="Classes\Animals\Mammals\Mammal.cs" />
@@ -76,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -90,6 +93,44 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\jackrussellterrier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldenretriever.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\germanshepherd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siberianhusky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bordercollie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pomeranian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rottweiler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chihuahua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\labrador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shibainu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samoyed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beagle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borzoi.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
