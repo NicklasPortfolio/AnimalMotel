@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbRegistered = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblTimeSpecification = new System.Windows.Forms.Label();
             this.checkListAll = new System.Windows.Forms.CheckBox();
             this.picAnimal = new System.Windows.Forms.PictureBox();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.lblTimeSpecification = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnimal)).BeginInit();
@@ -74,9 +74,11 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.lbRegistered);
             this.groupBox1.ForeColor = System.Drawing.Color.Green;
-            this.groupBox1.Location = new System.Drawing.Point(12, 300);
+            this.groupBox1.Location = new System.Drawing.Point(18, 462);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(760, 249);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(1140, 383);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "List of Registered Animals";
@@ -84,72 +86,81 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(408, 21);
+            this.label11.Location = new System.Drawing.Point(612, 32);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(36, 13);
+            this.label11.Size = new System.Drawing.Size(54, 20);
             this.label11.TabIndex = 7;
             this.label11.Text = "Family";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(348, 21);
+            this.label10.Location = new System.Drawing.Point(522, 32);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 13);
+            this.label10.Size = new System.Drawing.Size(57, 20);
             this.label10.TabIndex = 6;
             this.label10.Text = "Animal";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(577, 21);
+            this.label5.Location = new System.Drawing.Point(866, 32);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 13);
+            this.label5.Size = new System.Drawing.Size(108, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "Specifications";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(256, 21);
+            this.label4.Location = new System.Drawing.Point(384, 32);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "Gender";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(213, 21);
+            this.label3.Location = new System.Drawing.Point(320, 32);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 13);
+            this.label3.Size = new System.Drawing.Size(38, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Age";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(123, 21);
+            this.label2.Location = new System.Drawing.Point(184, 32);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Name";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 21);
+            this.label1.Location = new System.Drawing.Point(64, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.Size = new System.Drawing.Size(26, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "ID";
             // 
             // lbRegistered
             // 
             this.lbRegistered.FormattingEnabled = true;
-            this.lbRegistered.Location = new System.Drawing.Point(6, 37);
+            this.lbRegistered.ItemHeight = 20;
+            this.lbRegistered.Location = new System.Drawing.Point(9, 57);
+            this.lbRegistered.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lbRegistered.Name = "lbRegistered";
-            this.lbRegistered.Size = new System.Drawing.Size(747, 186);
+            this.lbRegistered.Size = new System.Drawing.Size(1118, 284);
             this.lbRegistered.TabIndex = 0;
             // 
             // groupBox2
@@ -169,22 +180,35 @@
             this.groupBox2.Controls.Add(this.txtName);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.ForeColor = System.Drawing.Color.Green;
-            this.groupBox2.Location = new System.Drawing.Point(13, 13);
+            this.groupBox2.Location = new System.Drawing.Point(20, 20);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox2.Size = new System.Drawing.Size(758, 270);
+            this.groupBox2.Size = new System.Drawing.Size(1137, 415);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Animal Specifications";
+            // 
+            // lblTimeSpecification
+            // 
+            this.lblTimeSpecification.AutoSize = true;
+            this.lblTimeSpecification.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblTimeSpecification.Location = new System.Drawing.Point(153, 94);
+            this.lblTimeSpecification.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTimeSpecification.Name = "lblTimeSpecification";
+            this.lblTimeSpecification.Size = new System.Drawing.Size(57, 20);
+            this.lblTimeSpecification.TabIndex = 14;
+            this.lblTimeSpecification.Text = "(years)";
+            this.lblTimeSpecification.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // checkListAll
             // 
             this.checkListAll.AutoSize = true;
             this.checkListAll.ForeColor = System.Drawing.Color.Blue;
-            this.checkListAll.Location = new System.Drawing.Point(565, 185);
+            this.checkListAll.Location = new System.Drawing.Point(848, 285);
+            this.checkListAll.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkListAll.Name = "checkListAll";
-            this.checkListAll.Size = new System.Drawing.Size(94, 17);
+            this.checkListAll.Size = new System.Drawing.Size(139, 24);
             this.checkListAll.TabIndex = 13;
             this.checkListAll.Text = "List all Animals";
             this.checkListAll.UseVisualStyleBackColor = true;
@@ -192,9 +216,10 @@
             // 
             // picAnimal
             // 
-            this.picAnimal.Location = new System.Drawing.Point(565, 39);
+            this.picAnimal.Location = new System.Drawing.Point(848, 60);
+            this.picAnimal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.picAnimal.Name = "picAnimal";
-            this.picAnimal.Size = new System.Drawing.Size(163, 140);
+            this.picAnimal.Size = new System.Drawing.Size(244, 215);
             this.picAnimal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAnimal.TabIndex = 11;
             this.picAnimal.TabStop = false;
@@ -202,9 +227,10 @@
             // btnAdd
             // 
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAdd.Location = new System.Drawing.Point(377, 226);
+            this.btnAdd.Location = new System.Drawing.Point(566, 348);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(171, 38);
+            this.btnAdd.Size = new System.Drawing.Size(256, 58);
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Add Animal";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -215,20 +241,21 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(441, 21);
+            this.label9.Location = new System.Drawing.Point(662, 32);
             this.label9.Margin = new System.Windows.Forms.Padding(0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.Size = new System.Drawing.Size(57, 20);
             this.label9.TabIndex = 9;
             this.label9.Text = "Animal";
             // 
             // lbAnimal
             // 
             this.lbAnimal.FormattingEnabled = true;
-            this.lbAnimal.Location = new System.Drawing.Point(375, 39);
+            this.lbAnimal.ItemHeight = 20;
+            this.lbAnimal.Location = new System.Drawing.Point(562, 60);
             this.lbAnimal.Margin = new System.Windows.Forms.Padding(0);
             this.lbAnimal.Name = "lbAnimal";
-            this.lbAnimal.Size = new System.Drawing.Size(174, 186);
+            this.lbAnimal.Size = new System.Drawing.Size(259, 284);
             this.lbAnimal.TabIndex = 8;
             this.lbAnimal.SelectedIndexChanged += new System.EventHandler(this.lbAnimal_SelectedIndexChanged);
             // 
@@ -237,20 +264,21 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(255, 21);
+            this.label8.Location = new System.Drawing.Point(382, 32);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(31, 13);
+            this.label8.Size = new System.Drawing.Size(43, 20);
             this.label8.TabIndex = 7;
             this.label8.Text = "Type";
             // 
             // lbType
             // 
             this.lbType.FormattingEnabled = true;
-            this.lbType.Location = new System.Drawing.Point(188, 39);
+            this.lbType.ItemHeight = 20;
+            this.lbType.Location = new System.Drawing.Point(282, 60);
             this.lbType.Margin = new System.Windows.Forms.Padding(0);
             this.lbType.Name = "lbType";
-            this.lbType.Size = new System.Drawing.Size(174, 225);
+            this.lbType.Size = new System.Drawing.Size(259, 344);
             this.lbType.TabIndex = 6;
             this.lbType.SelectedIndexChanged += new System.EventHandler(this.lbCategory_SelectedIndexChanged);
             // 
@@ -259,9 +287,11 @@
             this.gbSpecifications.Controls.Add(this.cbSpec2);
             this.gbSpecifications.Controls.Add(this.txtSpec1);
             this.gbSpecifications.Controls.Add(this.lblSpec1);
-            this.gbSpecifications.Location = new System.Drawing.Point(10, 156);
+            this.gbSpecifications.Location = new System.Drawing.Point(15, 240);
+            this.gbSpecifications.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbSpecifications.Name = "gbSpecifications";
-            this.gbSpecifications.Size = new System.Drawing.Size(162, 108);
+            this.gbSpecifications.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbSpecifications.Size = new System.Drawing.Size(243, 166);
             this.gbSpecifications.TabIndex = 5;
             this.gbSpecifications.TabStop = false;
             // 
@@ -269,36 +299,40 @@
             // 
             this.cbSpec2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cbSpec2.FormattingEnabled = true;
-            this.cbSpec2.Location = new System.Drawing.Point(6, 76);
+            this.cbSpec2.Location = new System.Drawing.Point(9, 117);
+            this.cbSpec2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbSpec2.MaxDropDownItems = 100;
             this.cbSpec2.Name = "cbSpec2";
-            this.cbSpec2.Size = new System.Drawing.Size(149, 21);
+            this.cbSpec2.Size = new System.Drawing.Size(222, 28);
             this.cbSpec2.TabIndex = 4;
             this.cbSpec2.SelectedIndexChanged += new System.EventHandler(this.cbSpec2_SelectedIndexChanged);
             // 
             // txtSpec1
             // 
-            this.txtSpec1.Location = new System.Drawing.Point(6, 50);
+            this.txtSpec1.Location = new System.Drawing.Point(9, 77);
+            this.txtSpec1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSpec1.Name = "txtSpec1";
-            this.txtSpec1.Size = new System.Drawing.Size(149, 20);
+            this.txtSpec1.Size = new System.Drawing.Size(222, 26);
             this.txtSpec1.TabIndex = 2;
             // 
             // lblSpec1
             // 
             this.lblSpec1.BackColor = System.Drawing.Color.Transparent;
-            this.lblSpec1.Location = new System.Drawing.Point(4, 12);
+            this.lblSpec1.Location = new System.Drawing.Point(6, 18);
             this.lblSpec1.Margin = new System.Windows.Forms.Padding(0);
             this.lblSpec1.Name = "lblSpec1";
-            this.lblSpec1.Size = new System.Drawing.Size(152, 35);
+            this.lblSpec1.Size = new System.Drawing.Size(228, 54);
             this.lblSpec1.TabIndex = 0;
             this.lblSpec1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lbGender);
-            this.groupBox3.Location = new System.Drawing.Point(10, 80);
+            this.groupBox3.Location = new System.Drawing.Point(15, 123);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(162, 70);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Size = new System.Drawing.Size(243, 108);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Gender";
@@ -306,63 +340,59 @@
             // lbGender
             // 
             this.lbGender.FormattingEnabled = true;
-            this.lbGender.Location = new System.Drawing.Point(6, 19);
+            this.lbGender.ItemHeight = 20;
+            this.lbGender.Location = new System.Drawing.Point(9, 29);
+            this.lbGender.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lbGender.Name = "lbGender";
-            this.lbGender.Size = new System.Drawing.Size(150, 43);
+            this.lbGender.Size = new System.Drawing.Size(223, 64);
             this.lbGender.TabIndex = 0;
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(51, 54);
+            this.txtAge.Location = new System.Drawing.Point(76, 83);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(45, 20);
+            this.txtAge.Size = new System.Drawing.Size(66, 26);
             this.txtAge.TabIndex = 3;
             // 
             // label7
             // 
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(13, 57);
+            this.label7.Location = new System.Drawing.Point(20, 88);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.Size = new System.Drawing.Size(57, 20);
             this.label7.TabIndex = 2;
             this.label7.Text = "Age:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(51, 28);
+            this.txtName.Location = new System.Drawing.Point(76, 43);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(121, 20);
+            this.txtName.Size = new System.Drawing.Size(180, 26);
             this.txtName.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(13, 26);
+            this.label6.Location = new System.Drawing.Point(20, 40);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 23);
+            this.label6.Size = new System.Drawing.Size(57, 35);
             this.label6.TabIndex = 0;
             this.label6.Text = "Name:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblTimeSpecification
-            // 
-            this.lblTimeSpecification.AutoSize = true;
-            this.lblTimeSpecification.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTimeSpecification.Location = new System.Drawing.Point(102, 61);
-            this.lblTimeSpecification.Name = "lblTimeSpecification";
-            this.lblTimeSpecification.Size = new System.Drawing.Size(38, 13);
-            this.lblTimeSpecification.TabIndex = 14;
-            this.lblTimeSpecification.Text = "(years)";
-            this.lblTimeSpecification.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(1176, 863);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Main";
             this.Text = "Animal Motel";
             this.groupBox1.ResumeLayout(false);

@@ -130,7 +130,7 @@ namespace AnimalMotel
                 selectedAnimal = lbAnimal.SelectedItem.ToString();
             }
 
-            Console.WriteLine(selectedAnimal);
+            selectedAnimal = selectedAnimal.Replace(" ", "").ToLower();
             picAnimal.Image = (Image)Resources.ResourceManager.GetObject(selectedAnimal);
         }
 
