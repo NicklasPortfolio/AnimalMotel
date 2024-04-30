@@ -56,6 +56,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnDBSubmit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnimal)).BeginInit();
@@ -165,6 +166,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnDBSubmit);
             this.groupBox2.Controls.Add(this.lblTimeSpecification);
             this.groupBox2.Controls.Add(this.checkListAll);
             this.groupBox2.Controls.Add(this.picAnimal);
@@ -385,6 +387,16 @@
             this.label6.Text = "Name:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // btnDBSubmit
+            // 
+            this.btnDBSubmit.Location = new System.Drawing.Point(848, 348);
+            this.btnDBSubmit.Name = "btnDBSubmit";
+            this.btnDBSubmit.Size = new System.Drawing.Size(244, 56);
+            this.btnDBSubmit.TabIndex = 15;
+            this.btnDBSubmit.Text = "Save Animals to Database";
+            this.btnDBSubmit.UseVisualStyleBackColor = true;
+            this.btnDBSubmit.Click += new System.EventHandler(this.btnDBSubmit_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -437,6 +449,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblTimeSpecification;
+        public System.Windows.Forms.Button btnDBSubmit;
     }
 }
 

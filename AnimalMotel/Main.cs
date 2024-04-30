@@ -11,6 +11,8 @@ using AnimalMotel.Classes.Animals.Reptiles;
 using AnimalMotel.Classes.Animals.Amphibians;
 using AnimalMotel.Classes.Animals.Fish;
 using AnimalMotel.Classes.Animals.Invertebrates;
+using System.Windows;
+using MessageBox = System.Windows.Forms.MessageBox;
 
 namespace AnimalMotel
 {
@@ -267,6 +269,16 @@ namespace AnimalMotel
                 // Unconventional?
                 lbCategory_SelectedIndexChanged(sender, e);
             }
+        }
+
+        private void btnDBSubmit_Click(object sender, EventArgs e)
+        {
+            if (manager.animals.Count <= 0)
+            {
+                MessageBox.Show("No registered animals found", "Invalid Data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            manager.SaveAnimalsToDatabase();
         }
     }
 }

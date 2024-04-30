@@ -8,6 +8,11 @@ using AnimalMotel.Classes.Animals.Reptiles;
 using AnimalMotel.Classes.Animals.Amphibians;
 using AnimalMotel.Classes.Animals.Fish;
 using AnimalMotel.Classes.Animals.Invertebrates;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+using System.Xml.Linq;
+using System.Windows;
+using System.Windows.Forms;
 
 namespace AnimalMotel.Classes
 {
@@ -16,6 +21,7 @@ namespace AnimalMotel.Classes
         Random rand = new Random();
         Main main;
         List<string> registeredAnimals = new List<string>();
+        public List<Animal> animals = new List<Animal>();
 
         public AnimalManager(Main mainfrm)
         {
@@ -44,9 +50,39 @@ namespace AnimalMotel.Classes
                 animal.Id = GenerateID(animal.Gender, animal.AnimalName, animal.AnimalType, animal.Age);
 
                 registeredAnimals.Add(animal.ToString());
+                animals.Add(animal);
                 main.lbRegistered.DataSource = null;
                 main.lbRegistered.DataSource = registeredAnimals;
             }
+        }
+
+        public void SaveAnimalsToDatabase()
+        {
+            // Build DB Connection
+            string connstr = "server=localhost;uid=root;pwd=;database=animalmoteldb";
+            MySqlConnection conn = new MySqlConnection();
+            conn.ConnectionString = connstr;
+            conn.Open();
+
+            string sql = $"INSERT INTO animals (id, name, age, gender, animalName, animalType, specification1, specification2) VALUES (?id, ?name, ?age, ?gender, ?animalName, ?animalType, ?specification1, ?specification2)";
+            
+            foreach(Animal animal in animals)
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.Parameters.Add("?id", MySqlDbType.Text).Value = animal.Id;
+                cmd.Parameters.Add("?name", MySqlDbType.Text).Value = animal.Name;
+                cmd.Parameters.Add("?age", MySqlDbType.Text).Value = animal.Age;
+                cmd.Parameters.Add("?gender", MySqlDbType.Text).Value = animal.Gender;
+                cmd.Parameters.Add("?animalName", MySqlDbType.Text).Value = animal.AnimalName;
+                cmd.Parameters.Add("?animalType", MySqlDbType.Text).Value = animal.AnimalType;
+                cmd.Parameters.Add("?specification1", MySqlDbType.Text).Value = animal.Specification1;
+                cmd.Parameters.Add("?specification2", MySqlDbType.Text).Value = animal.Specification2;
+                cmd.ExecuteNonQuery();
+            }
+
+            main.btnDBSubmit.Enabled = false;
+            main.btnDBSubmit.Text = "Insert Successful";
+            conn.Close();
         }
 
         // Metod för att generera ett unikt ID baserat på information från djuret
